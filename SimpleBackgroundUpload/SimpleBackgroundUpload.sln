@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBackgroundUpload", "SimpleBackgroundUpload\SimpleBackgroundUpload.csproj", "{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Release|iPhone.Build.0 = Release|iPhone
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{478DB3E3-B7C5-437C-A1DD-3F364FC08CB1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SimpleBackgroundUpload\SimpleBackgroundUpload.csproj
+	EndGlobalSection
+EndGlobal
