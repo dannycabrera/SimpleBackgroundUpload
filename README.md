@@ -27,11 +27,11 @@ On the Xamarin.iOS project:
 Details
 -------
 
-This sample uploads a PDF from the Xamarin.iOS app to the ASP.NET Web API using a mulipart/form-data post request. The upload can be triggered by tapping the button on the screen or minimizing the iOS app.
+This sample uploads a PDF from the Xamarin.iOS app to the ASP.NET Web API using a mulipart/form-data post request. The upload can be triggered by tapping the button on the screen or minimizing the app.
 
-Using a background NSUrlSession the upload is queued and started. Since the NSUrlRequest will occur in the background the content's body part is writen to disk and then passed to the upload task. Apple states it's in the app's benefit to write to disk so that it can release memory associated with that data. You will notice that the content-length is not specified on purpose as the session object will do that for us when not provided.
+Using a background NSUrlSession instance an upload task is queued and started. Since the NSUrlRequest will occur in the background the content's body part is written to disk and then passed to the upload task. Apple states it's in the app's benefit to write to disk so that it can release memory associated with that data. You will notice that the content-length is not specified on purpose as the session object will do that for us when not provided.
 
-Our background session configuration uses the same identifier when created so that in the case the app is terminated by the system and relaunched, the app can use the same identifier to create a new configuration object and continute even if the app is suspended or terminated. See: https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/clm/NSURLSessionConfiguration/backgroundSessionConfigurationWithIdentifier:
+The background session configuration instance uses the same identifier when created so that in the case the app is terminated by the system and relaunched, the app can use the same identifier to create a new configuration object and continute even if the app is suspended or terminated. See: https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/clm/NSURLSessionConfiguration/backgroundSessionConfigurationWithIdentifier:
 
 Once the upload completes the SessionTaskDelegate's DidCompleteWithError is called and the response is checked to make sure the server returned HTTP status code 21 "Created". The ASP.NET Web API simply receives the multipart content, writes the file to disk and returns HTTPStatusCode.Created.
 
